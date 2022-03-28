@@ -27,4 +27,13 @@ export class OrbitListComponent implements OnInit {
 		});
 	}
 
+	alternateRows(): boolean {
+		for(let i = 0; i < this.satellites.length; i++) {
+			if(i % 2 === 0) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
 }
